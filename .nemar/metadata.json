@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "MEG-SCANS - A comprehensive magnetoencephalography speech dataset with Stories, Chirps And Noisy Sentences.",
+  "description": "MEG-SCANS is a comprehensive magnetoencephalography dataset comprising raw and MaxFiltered recordings from 24 German-speaking participants engaged in auditory experiments. The dataset includes approximately one hour of stimuli per participant consisting of audiobooks, sentences from the Oldenburger Matrix Sentence Test at varying intelligibility levels for speech reception threshold assessment, and chirp stimuli for signal quality evaluation. Complementary data include structural MRI scans, behavioral audiograms, and stimulus materials, organized according to BIDS standards to facilitate large-scale encoding/decoding analyses of neural responses to speech.",
+  "methods_description": "Magnetoencephalography recordings were collected from 24 participants over three months during auditory experiments. Each session included approximately one hour of stimuli: two audiobooks (~20 minutes each), 120 sentences from the Oldenburger Matrix Sentence Test (OLSA) at speech intelligibility levels ranging from 20% to 95%, and short up-chirps for signal quality assessment. Raw MEG data and MaxFiltered data were acquired alongside two empty-room recordings (pre- and post-session), structural MRI scans, and behavioral audiometric assessments. Auxiliary channels recorded left audio (MISC001), right audio (MISC002), and instructor microphone (MISC007) at 1000 Hz sampling rate.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,32 @@
     },
     "Bernd T. Meyer": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006468.v1.1.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "speech perception"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "speech intelligibility"
+    },
+    {
+      "term": "brain imaging"
+    },
+    {
+      "term": "neural encoding"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on006468",
       "identifier_type": "URL",
@@ -45,13 +67,18 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006468.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)",
+      "funder_name": "Deutsche Forschungsgemeinschaft",
       "award_number": "EXC 2177/1",
-      "award_title": "Germany's Excellence Strategy - Project ID 390895286"
+      "award_title": "Germany's Excellence Strategy"
     },
     {
       "funder_name": "Carl von Ossietzky University Oldenburg",
@@ -60,14 +87,14 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "beh",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "219.2 GB (799 files)"
   ],
   "formats": [
     ".TextGrid",
@@ -82,34 +109,8 @@
     ".pos",
     ".tsv",
     ".txt",
-    ".wav"
+    ".wav",
+    ".yml"
   ],
-  "description": "MEG-SCANS is a comprehensive magnetoencephalography dataset comprising raw and MaxFiltered recordings from 24 German-speaking participants engaged in auditory experiments. The dataset includes approximately one hour of stimuli per participant consisting of audiobooks, sentences from the Oldenburger Matrix Sentence Test at varying intelligibility levels for speech reception threshold assessment, and chirp stimuli for signal quality evaluation. Complementary data include structural MRI scans, behavioral audiograms, and stimulus materials, organized according to BIDS standards to facilitate large-scale encoding/decoding analyses of neural responses to speech.",
-  "methods_description": "Magnetoencephalography recordings were collected from 24 participants over three months during auditory experiments. Each session included approximately one hour of stimuli: two audiobooks (~20 minutes each), 120 sentences from the Oldenburger Matrix Sentence Test (OLSA) at speech intelligibility levels ranging from 20% to 95%, and short up-chirps for signal quality assessment. Raw MEG data and MaxFiltered data were acquired alongside two empty-room recordings (pre- and post-session), structural MRI scans, and behavioral audiometric assessments. Auxiliary channels recorded left audio (MISC001), right audio (MISC002), and instructor microphone (MISC007) at 1000 Hz sampling rate.",
-  "keywords": [
-    {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "speech perception"
-    },
-    {
-      "term": "auditory processing"
-    },
-    {
-      "term": "brain imaging"
-    },
-    {
-      "term": "encoding/decoding analysis"
-    },
-    {
-      "term": "speech intelligibility"
-    }
-  ],
-  "source_hash": "6a4dee69485966e688828aca7e501e0c4541e293a7a2d1e8376549bed25d3dae"
+  "source_hash": "ac41ab0dd8f28e8ff0838259b5fc7777c2b1e2194549bf4048eab79e00b90641"
 }
