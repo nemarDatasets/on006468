@@ -1,38 +1,115 @@
 {
   "version": "2.0",
-  "dataset_id": "on006468",
-  "source": "openneuro",
-  "source_id": "ds006468",
+  "pipeline_stage": "validated",
   "title": "MEG-SCANS - A comprehensive magnetoencephalography speech dataset with Stories, Chirps And Noisy Sentences.",
-  "authors": {
-    "Till Habersetzer": {},
-    "Bernd T. Meyer": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Till Habersetzer": {
+      "orcid": "0009-0009-5232-9709"
+    },
+    "Bernd T. Meyer": {}
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006468.v1.1.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006468",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006468",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-025-06397-4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.17397581",
+      "identifier_type": "DOI",
+      "relation_type": "HasPart"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/sdata.2018.110",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "anat",
-    "beh",
-    "meg"
-  ],
-  "datatypes": [
-    "anat",
-    "beh",
-    "meg"
   ],
   "funding_references": [
     {
-      "funder_name": "This work was funded by Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy– EXC 2177/1- Project ID 390895286 and by Forschungspoolmittel Potentialbereich mHealth from the School VI Medicine and Health Sciences at Carl von Ossietzky University Oldenburg (PB mHealth 2020-13)."
+      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)",
+      "award_number": "EXC 2177/1",
+      "award_title": "Germany's Excellence Strategy - Project ID 390895286"
+    },
+    {
+      "funder_name": "Carl von Ossietzky University Oldenburg",
+      "award_number": "PB mHealth 2020-13",
+      "award_title": "Forschungspoolmittel Potentialbereich mHealth, School VI Medicine and Health Sciences"
     }
   ],
-  "acknowledgements": "We are grateful to Helge Ahrens for his technical support during patient recordings, to Svea Steuer for her foundational contributions in the project's early stages, the patients, whose participation was essential to this work."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "anat",
+    "beh",
+    "meg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".TextGrid",
+    ".dat",
+    ".fif",
+    ".gz",
+    ".hdf5",
+    ".html",
+    ".json",
+    ".mat",
+    ".md",
+    ".pos",
+    ".tsv",
+    ".txt",
+    ".wav"
+  ],
+  "description": "MEG-SCANS is a comprehensive magnetoencephalography dataset comprising raw and MaxFiltered recordings from 24 German-speaking participants engaged in auditory experiments. The dataset includes approximately one hour of stimuli per participant consisting of audiobooks, sentences from the Oldenburger Matrix Sentence Test at varying intelligibility levels for speech reception threshold assessment, and chirp stimuli for signal quality evaluation. Complementary data include structural MRI scans, behavioral audiograms, and stimulus materials, organized according to BIDS standards to facilitate large-scale encoding/decoding analyses of neural responses to speech.",
+  "methods_description": "Magnetoencephalography recordings were collected from 24 participants over three months during auditory experiments. Each session included approximately one hour of stimuli: two audiobooks (~20 minutes each), 120 sentences from the Oldenburger Matrix Sentence Test (OLSA) at speech intelligibility levels ranging from 20% to 95%, and short up-chirps for signal quality assessment. Raw MEG data and MaxFiltered data were acquired alongside two empty-room recordings (pre- and post-session), structural MRI scans, and behavioral audiometric assessments. Auxiliary channels recorded left audio (MISC001), right audio (MISC002), and instructor microphone (MISC007) at 1000 Hz sampling rate.",
+  "keywords": [
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "speech perception"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "brain imaging"
+    },
+    {
+      "term": "encoding/decoding analysis"
+    },
+    {
+      "term": "speech intelligibility"
+    }
+  ],
+  "source_hash": "6a4dee69485966e688828aca7e501e0c4541e293a7a2d1e8376549bed25d3dae"
 }
