@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "dataset_id": "on006468",
+  "source": "openneuro",
+  "source_id": "ds006468",
+  "title": "MEG-SCANS - A comprehensive magnetoencephalography speech dataset with Stories, Chirps And Noisy Sentences.",
+  "authors": {
+    "Till Habersetzer": {},
+    "Bernd T. Meyer": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds006468.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.7.0",
+  "recording_modality": [
+    "anat",
+    "beh",
+    "meg"
+  ],
+  "datatypes": [
+    "anat",
+    "beh",
+    "meg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This work was funded by Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy– EXC 2177/1- Project ID 390895286 and by Forschungspoolmittel Potentialbereich mHealth from the School VI Medicine and Health Sciences at Carl von Ossietzky University Oldenburg (PB mHealth 2020-13)."
+    }
+  ],
+  "acknowledgements": "We are grateful to Helge Ahrens for his technical support during patient recordings, to Svea Steuer for her foundational contributions in the project's early stages, the patients, whose participation was essential to this work."
+}
